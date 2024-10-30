@@ -1,0 +1,40 @@
+<ion-content class="ion-padding page-content">
+  <div class="row mt-8">
+    <div class="col-md-4 mx-auto">
+      <ion-card class="action-card">
+        <ion-card-header>
+          <ion-title class="text-center">Botones génericos</ion-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <form>
+            <!-- Botón de prueba con plantilla predefinida -->
+            <app-buttons text="Prueba" color="tertiary" shape="round" fill="outline" size="small" expand="block"></app-buttons>
+            
+            <ion-button color="success" expand="full" shape="round" class="custom-button">
+              Agregar
+            </ion-button>
+
+            <ion-button color="warning" expand="full" shape="round" class="custom-button">
+              Modificar
+            </ion-button>
+
+            <ion-button color="danger" expand="full" shape="round" class="custom-button">
+              Eliminar
+            </ion-button>
+
+            <ion-button color="secondary" expand="full" shape="round" class="custom-button">
+              Consultar
+            </ion-button>
+
+            <!-- Botón de regreso con icono estilizado -->
+            <ion-button color="primary" expand="full" shape="round" routerLink="/home" class="back-button">
+              <ion-icon name="return-down-back-sharp" slot="start"></ion-icon>
+              Volver
+            </ion-button>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

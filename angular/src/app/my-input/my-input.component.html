@@ -1,0 +1,69 @@
+<ion-content class="ion-padding page-content">
+  <div class="row mt-8">
+    <div class="col-md-4 mx-auto">
+      <ion-card class="product-card">
+        <ion-card-header>
+          <ion-title class="text-center">Input génericos</ion-title>
+        </ion-card-header>
+
+        <ion-card-content>
+          <form>
+            <!-- Componente de entrada para nombre de producto -->
+            <ion-list class="form-list">
+              <ion-item lines="full">
+                <ion-input labelPlacement="floating" type="text" id="nombreProducto" name="nombreProducto"
+                  autocomplete="off" required>
+                  <div slot="label">Nombre del Producto: <ion-text color="danger">(Obligatorio)</ion-text></div>
+                </ion-input>
+              </ion-item>
+
+              <!-- Selector de categoría -->
+              <ion-item lines="full">
+                <ion-select labelPlacement="floating" placeholder="Selecciona Categoría" id="categoria"
+                  name="categoria" required>
+                  <ion-select-option value="electronica">Electrónica</ion-select-option>
+                  <ion-select-option value="hogar">Hogar</ion-select-option>
+                  <ion-select-option value="juguetes">Juguetes</ion-select-option>
+                  <ion-select-option value="ropa">Ropa</ion-select-option>
+                </ion-select>
+              </ion-item>
+
+              <!-- Precio del producto -->
+              <ion-item lines="full">
+                <ion-input labelPlacement="floating" type="number" id="precioProducto" name="precioProducto"
+                  min="0.00" step="0.01" autocomplete="off" required>
+                  <div slot="label">Precio: <ion-text color="danger">(Obligatorio)</ion-text></div>
+                </ion-input>
+              </ion-item>
+
+              <!-- Fecha de lanzamiento -->
+              <ion-item lines="full">
+                <ion-input labelPlacement="floating" type="date" id="fechaLanzamiento" name="fechaLanzamiento"
+                  autocomplete="off" required>
+                  <div slot="label">Fecha de Lanzamiento: <ion-text color="danger">(Obligatorio)</ion-text></div>
+                </ion-input>
+              </ion-item>
+
+              <!-- Notas del producto -->
+              <ion-item lines="full">
+                <ion-textarea labelPlacement="floating" id="notasProducto" name="notasProducto" placeholder="Notas adicionales"></ion-textarea>
+              </ion-item>
+            </ion-list>
+
+            <!-- Botón de guardar con icono de guardar estilizado -->
+            <ion-button color="success" expand="block" class="save-button">
+              <ion-icon name="save-sharp" slot="start"></ion-icon>
+              Guardar Producto
+            </ion-button>
+
+            <!-- Botón de regresar con icono de flecha estilizado -->
+            <ion-button color="primary" expand="block" routerLink="/productos" class="back-button">
+              <ion-icon name="return-down-back-sharp" slot="start"></ion-icon>
+              Volver
+            </ion-button>
+          </form>
+        </ion-card-content>
+      </ion-card>
+    </div>
+  </div>
+</ion-content>

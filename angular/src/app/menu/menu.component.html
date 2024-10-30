@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Menú</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding page-content">
+  <div class="hero-section">
+    <h1>Bienvenido</h1>
+    <p>Explora los diferentes componentes genericos</p>
+  </div>
+  <ion-list lines="full" class="menu-list">
+    <ion-item routerLink="/input" detail>
+      <ion-icon name="pencil-outline" slot="start"></ion-icon>
+      <ion-label>Input</ion-label>
+    </ion-item>
+    <ion-item routerLink="/button" detail>
+      <ion-icon name="finger-print-outline" slot="start"></ion-icon>
+      <ion-label>Botones</ion-label>
+    </ion-item>
+    <ion-item routerLink="/label" detail>
+      <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+      <ion-label>Label</ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>
